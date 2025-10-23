@@ -1,0 +1,15 @@
+# IDE metadata
+.project
+.classpath
+.vscode/
+
+# Java build outputs
+*.class
+*.jar
+
+# Build directories anywhere in the tree
+**/build/
+**/bin/
+
+# Gradle local cache (optional but common)
+.gradle/
