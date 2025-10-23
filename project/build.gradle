@@ -20,3 +20,15 @@ application {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.register('copyDocs', Copy) {
+    group = "Documentation"
+    description = "Copies JavaDoc output from build/docs to build/reports/javadoc"
+    dependsOn 'javadoc'
+    from("$buildDir/docs")
+    into("$buildDir/reports/javadoc")
+}
+
+tasks.named('check') {
+    dependsOn 'copyDocs'
+}
