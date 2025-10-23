@@ -1,15 +1,15 @@
-# IDE metadata
+# Ignore IDE settings
 .project
 .classpath
 .vscode/
 
-# Java build outputs
+# Ignore compiled Java artifacts
 *.class
 *.jar
 
-# Build directories anywhere in the tree
+# Ignore build output directories anywhere
 **/build/
 **/bin/
 
-# Gradle local cache (optional but common)
+# Optional: ignore Gradle cache and local files
 .gradle/
